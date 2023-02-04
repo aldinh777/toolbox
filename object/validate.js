@@ -1,1 +1,2 @@
-export const has = (obj, ...keys) => keys.every((key) => Reflect.has(obj, key));
+export const has = (obj, ...keys) =>
+    keys.every((key) => typeof obj === 'object' && Reflect.has(obj, key));
