@@ -1,8 +1,8 @@
-export default class ObjectMapper<T extends object> {
+export default class ObjectIdentifier<T extends object> {
     protected _objs: Map<string, T>;
     protected _keys: WeakMap<T, string>;
-    delete(key: string): void;
-    clear(): void;
     getKey(object: T): string;
     getObject(key: string): T | undefined;
+    deleteKey(key: string): void;
+    private _generateRandomKey(): string;
 }
