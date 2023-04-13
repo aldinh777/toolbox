@@ -1,8 +1,8 @@
-export const randomNumber = (range = 10) => Math.floor(Math.random() * range);
+const randomNumber = (range = 10) => Math.floor(Math.random() * range);
 
-export const randomItem = (array = []) => array[randomNumber(array.length)];
+const randomItem = (array = []) => array[randomNumber(array.length)];
 
-export const randomString = (
+const randomString = (
     length = 1,
     characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ) => {
@@ -12,3 +12,5 @@ export const randomString = (
     }
     return result;
 };
+
+module.exports = { randomNumber, randomItem, randomString };

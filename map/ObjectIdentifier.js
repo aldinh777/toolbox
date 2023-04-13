@@ -1,6 +1,6 @@
 import { randomString } from '../random/common.js';
 
-export default class ObjectIdentifier {
+class ObjectIdentifier {
     _objs = new Map();
     _keys = new WeakMap();
     getKey(object) {
@@ -34,3 +34,5 @@ export default class ObjectIdentifier {
         return generatedKey;
     }
 }
+
+module.exports = ObjectIdentifier;

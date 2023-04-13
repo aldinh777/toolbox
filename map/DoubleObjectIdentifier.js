@@ -1,6 +1,6 @@
 import ObjectIdentifier from './ObjectIdentifier';
 
-export default class DoubleObjectIdentifier extends ObjectIdentifier {
+class DoubleObjectIdentifier extends ObjectIdentifier {
     _keys2 = new WeakMap();
     _objs2 = new WeakMap();
     setSecondaryObject(key, secondaryObject) {
@@ -31,3 +31,5 @@ export default class DoubleObjectIdentifier extends ObjectIdentifier {
         super.deleteKey(key);
     }
 }
+
+module.exports = DoubleObjectIdentifier;
