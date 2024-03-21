@@ -2,7 +2,6 @@
   "name": "@aldinh777/toolbox",
   "version": "1.3.0",
   "description": "Bunch of useful tools for programming",
-  "main": "index.js",
   "author": "aldinh777",
   "license": "ISC"
 }
