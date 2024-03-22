@@ -4,7 +4,7 @@
  * @param {number} range
  * @returns {number}
  */
-export const randomNumber = (range = 10) => parseInt(Math.random() * range);
+export const randomNumber = (range = 10) => parseInt(Math.random() * range)
 
 /**
  * Return random item of an array
@@ -13,7 +13,7 @@ export const randomNumber = (range = 10) => parseInt(Math.random() * range);
  * @param {Array.<T>} array
  * @returns {T}
  */
-export const randomItem = (array = []) => array[randomNumber(array.length)];
+export const randomItem = (array = []) => array[randomNumber(array.length)]
 
 /**
  * Generate random string with fixed length
@@ -26,9 +26,9 @@ export const randomString = (
     length = 1,
     characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ) => {
-    let result = '';
+    let result = ''
     for (let index = 0; index < length; index++) {
-        result += randomItem(characters);
+        result += randomItem(characters)
     }
-    return result;
-};
+    return result
+}

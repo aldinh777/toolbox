@@ -13,7 +13,7 @@
  * @param {supplier.<T>} generator
  * @returns {Array.<T>}
  */
-export const createArray = (length = 0, generator) => [...Array(length)].map((_, index) => generator?.(index));
+export const createArray = (length = 0, generator) => [...Array(length)].map((_, index) => generator?.(index))
 
 /**
  * Generate array with range [start, start+1, start+2, ..., end]
@@ -22,4 +22,4 @@ export const createArray = (length = 0, generator) => [...Array(length)].map((_,
  * @param {number} end
  * @returns
  */
-export const range = (start, end) => createArray(end - start + 1, (index) => index + start);
+export const range = (start, end) => createArray(end - start + 1, (index) => index + start)
